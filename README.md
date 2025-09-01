@@ -14,6 +14,9 @@ services:
 ```
 
 Script for sending pushover notification
+
+Set #pushover token# and #pushover user#
+
 ```
 #!/bin/sh
 
