@@ -4,7 +4,6 @@ Image runs a script once then exits, used for notifying an ip change
 
 Compose
 ```
-services:
   ipupdate:
     container_name: ipupdate
     image: ghcr.io/phillibl/ipupdate:latest
