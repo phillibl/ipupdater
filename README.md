@@ -7,8 +7,12 @@ Compose
   ipupdate:
     container_name: ipupdate
     image: ghcr.io/phillibl/ipupdate:latest
+	network_mode: service:#vpnservice
     volumes:
       - /path/to/scripts:/scripts
+    depends_on:
+      #vpnservice:
+        condition: service_healthy
     restart: no
 ```
 
